@@ -4,8 +4,8 @@ define('CHAT_ROOT', str_replace('\\', '/', dirname(dirname(__FILE__))));
 define('LOG_DIR', '/log/');
 define('CHAT_PREFIX', 'gChat_');
 
-//the refresh rate in seconds
-$CONFIG['refresh_rate'] = 5;
+//the refresh rate in milliseconds
+$CONFIG['refresh_rate'] = 5000;
 
 //Spam control
 $CONFIG['spam_control'] = true;

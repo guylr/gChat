@@ -1,0 +1,43 @@
+html, body {font: 11px Arial,Helvetica,serif; line-height: 1.24; background:#fff;}
+
+#container{margin:50px auto; height:500px; width:400px;}
+
+#chatbox{width:400px; height:auto; float:left; }
+
+#header{float:left; width:100%; height:33px; border-top:1px solid #5e5a61; border-bottom:4px solid #a3d39c; 
+        background:#2f2933 url('../images/header-back.png') repeat-x;}
+#messages{float:left; width:400px; height:auto; overflow:auto;}
+
+#messages .message{float:left; width:388px; background:#fdfbfb url('../images/message-back.png') repeat-x left top; padding:6px; 
+                   border-top:1px solid #fff; border-bottom:1px solid #ececec; overflow:hidden; color:#2f2933; clear:both;}
+
+#messages .message .mbody{float:left; width:358px; word-wrap:break-word; margin:0; padding:0;}
+#messages .message .mbody .name{}
+#messages .message .mbody .text{color:#747176;}
+#messages .message .time{float:left; width:28px; text-align:right; color:#747176;}
+
+#error{float:left; width:388px; margin:0; padding:3px 6px 3px 6px; border:none; border-top:4px solid #75101f; background:#f26d7d; display:none; clear:both;}
+#error .error_text{float:left; color:#fff; text-shadow: 1px 1px 0px #ac4e59;}
+#error .close{float:right; margin:2px 0; width:10px; height:11px; background:url(../images/close.png) no-repeat transparent;}
+#error .close:hover{cursor:pointer;}
+
+#form_container{float:left; width:400px; height:auto; padding:0;;}
+#form_container form{padding:0; margin:0;}
+
+.ginput input[type="text"],
+.ginput input[type="submit"],
+.ginput input {float:left; padding:4px 6px 4px 6px; margin:0px; color:#2f2933; overflow: visible; border:none; border-bottom:1px solid #e8e7e8 !important; border-top:4px solid #a3d39c !important; font-size:11px; background-color:#fafafa;}
+
+.ginput .normal{color:#a7a3a9 !important;}
+.ginput .gname{width:70px;}
+.ginput .gmessage{width:260px;}
+.ginput .gsubmit{width:46px !important;}
+
+.ginput input[type="submit"]::-moz-focus-inner {border:0;}
+
+.ginput input.focusie,
+.ginput input:focus,
+.ginput input[type="text"]:focus{background-color:#fff; border-top:4px solid #2f2933 !important;}
+
+.ginput input:active,
+.ginput input[type="text"]:active{border-top:2px solid #2f2933 !important; border-bottom:3px solid #e8e7e8 !important; }

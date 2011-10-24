@@ -30,13 +30,20 @@ class MessageLog extends Store{
     
     function print_messages(){
         $messages = $this->read();
-        $output = "";
+        $output = array();
+        $timestamp = "";
         
-        foreach($messages as $message){
-            $output .= '<div class="post"><span class="name">' . $message['name'] . '</span><span class="message">' . $message['message'] . '</span></div>'."\r\n";
-        }
+        /*foreach($messages as $mes){
+            $output[] = $mes;
+        }*/
         
-        return $output;
+        return $messages;
+    }
+    
+    function print_times(){
+        $messages = $this->read();
+        
+        return $messages[0]['timestamp'];
     }
     
     function timestamp()

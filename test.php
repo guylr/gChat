@@ -15,6 +15,8 @@ require_once('includes/messagelog.class.php');
 //echo htmlspecialchars("<a href='test'>Test</a>\"", ENT_QUOTES, 'UTF-8');
 
 $test = new MessageLog();
-//$test->new_message('a', 'a');
+//for($i=0;$i<10;$i++){
+    $test->new_message('a', 'a');
+//}
 echo $test->print_messages();
 ?>
