@@ -1,6 +1,6 @@
 <?php require_once('includes/preferences.php'); ?>
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=8" />
